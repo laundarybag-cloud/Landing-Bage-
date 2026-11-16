@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الوقت اللي بيضيع في الغسيل — Laundry Bag</title>
+<meta name="description" content="احسبي كام يوم من سنتك بيروح في الغسيل والكي. Laundry Bag — نستلم من باب بيتك ونرجّعهالك نضيفة ومكوية.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Alexandria:wght@700;900&display=swap">
+<style>
+  :root{--bg:#f3f6fa;--surface:#fff;--ink:#0d1a2f;--muted:#5a6b85;--line:#dce4ee;--brand:#2b5cb8;--deep:#0a1628;--amber:#f0a04b;
+  --display:"Alexandria","Cairo",system-ui,sans-serif;--body:"Cairo",system-ui,-apple-system,sans-serif;color-scheme:light}
+  @media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#080f1c;--surface:#111c2e;--ink:#e9f0fa;--muted:#93a9c6;--line:#1f2d44;--brand:#6fa8e8;--deep:#050c18;--amber:#f5b572;color-scheme:dark}}
+  :root[data-theme=dark]{--bg:#080f1c;--surface:#111c2e;--ink:#e9f0fa;--muted:#93a9c6;--line:#1f2d44;--brand:#6fa8e8;--deep:#050c18;--amber:#f5b572;color-scheme:dark}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);direction:rtl;font-size:16px;line-height:1.6}
+  .wrap{max-width:660px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:32px 54px;display:flex;flex-direction:column;gap:20px}
+  .brandline{display:flex;align-items:center;gap:11px}
+  .chip{width:48px;height:48px;border-radius:13px;background:linear-gradient(160deg,#9fd4ea,#6fb6e8);display:flex;align-items:center;justify-content:center;flex:none}
+  .chip svg{width:32px;height:32px;color:#15294a}
+  .bName{font-family:var(--display);font-weight:900;font-size:21px;line-height:1.1;direction:ltr}
+  .bName em{font-style:normal;color:var(--brand)}
+  .bPlace{font-size:12px;color:var(--muted);margin-top:1px}
+  h1{font-family:var(--display);font-weight:900;margin:16px 0 0;font-size:clamp(29px,7.2vw,46px);line-height:1.22;text-wrap:balance}
+  .lede{margin:10px 0 0;color:var(--muted);max-width:46ch}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:18px}
+  .field{display:flex;flex-direction:column;gap:10px;min-width:0}
+  .q{font-weight:700}.hint{color:var(--muted);font-size:13px}
+  .seg{display:flex;flex-wrap:wrap;gap:8px}
+  .seg button{flex:1 1 auto;min-width:74px;padding:11px 8px;font-family:var(--body);font-size:15px;font-weight:700;color:var(--ink);background:transparent;border:1.5px solid var(--line);border-radius:12px;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+  .seg button[aria-pressed=true]{background:var(--brand);border-color:var(--brand);color:#fff}
+  :focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+  .sliderRow{display:flex;align-items:center;gap:14px}
+  input[type=range]{flex:1;min-width:0;accent-color:var(--brand);height:26px}
+  .loadNum{font-family:var(--display);font-weight:900;font-size:26px;min-width:2.2ch;text-align:center;font-variant-numeric:tabular-nums}
+  .toggle{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:12px;background:transparent;cursor:pointer;font-family:var(--body);font-size:15px;font-weight:700;color:var(--ink)}
+  .toggle[aria-pressed=true]{border-color:var(--brand)}
+  .pipWrap{width:46px;height:27px;border-radius:14px;background:var(--line);position:relative;flex:none;transition:background .18s}
+  .toggle[aria-pressed=true] .pipWrap{background:var(--brand)}
+  .pip{position:absolute;top:3px;right:3px;width:21px;height:21px;border-radius:50%;background:#fff;transition:transform .18s}
+  .toggle[aria-pressed=true] .pip{transform:translateX(-19px)}
+  .panel{position:relative;overflow:hidden;background:linear-gradient(165deg,#13243f,var(--deep));border-radius:22px;padding:26px 20px 24px;color:#fff;display:flex;flex-direction:column;gap:20px}
+  .panelMark{position:absolute;left:-30px;top:-26px;width:168px;height:168px;opacity:.07;color:#fff;transform:rotate(-10deg);pointer-events:none}
+  .top{display:flex;flex-direction:column;align-items:center;text-align:center;gap:2px}
+  .rLabel{font-size:14px;color:#9ebbdf}
+  .bigRow{display:flex;align-items:baseline;gap:10px}
+  .big{font-family:var(--display);font-weight:900;line-height:.95;font-size:clamp(62px,17vw,104px);font-variant-numeric:tabular-nums}
+  .unit{font-weight:700;font-size:21px;color:#bcd4f0}
+  .perWeek{color:#7f9dc4;font-size:13.5px;margin-top:6px}
+  .yearBox{display:flex;flex-direction:column;gap:11px}
+  .yearHead{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+  .yearTitle{font-size:14px;font-weight:700;color:#cfe0f7}
+  .key{display:flex;align-items:center;gap:14px;font-size:12px;color:#8fafd4}
+  .key i{width:10px;height:10px;border-radius:3px;display:inline-block;margin-left:5px;vertical-align:-1px}
+  .k1{background:var(--amber)}.k2{background:rgba(255,255,255,.17)}
+  .grid{display:grid;grid-template-columns:repeat(26,1fr);gap:3px}
+  .grid span{aspect-ratio:1;border-radius:2px;background:rgba(255,255,255,.17);transition:background-color .35s ease}
+  .grid span.lost{background:var(--amber)}
+  .yearCap{font-size:14.5px;color:#e8f0fb;text-align:center}
+  .yearCap b{color:var(--amber);font-family:var(--display);font-weight:900;font-size:17px}
+  .equals{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .eq{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px 12px;text-align:center;min-width:0}
+  .eqN{font-family:var(--display);font-weight:900;font-size:27px;color:#fff;font-variant-numeric:tabular-nums;line-height:1.1}
+  .eqL{font-size:12.5px;color:#9ebbdf;margin-top:3px}
+  details{border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+  summary{cursor:pointer;padding:14px 18px;font-weight:700;font-size:15px;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"\2304";float:left;color:var(--muted)}
+  details[open] summary::after{content:"\2303"}
+  .rows{padding:2px 18px 16px;display:flex;flex-direction:column;gap:10px}
+  .row{display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0}
+  .row label{font-size:15px;min-width:0}
+  .row input[type=number]{width:74px;flex:none;padding:8px 10px;text-align:center;font-family:var(--body);font-size:15px;font-weight:700;color:var(--ink);background:transparent;border:1.5px solid var(--line);border-radius:10px;font-variant-numeric:tabular-nums}
+  .row.total{border-top:1px solid var(--line);padding-top:12px;font-weight:900}
+  .note{padding:0 18px 16px;color:var(--muted);font-size:13px}
+  .actions{display:flex;flex-direction:column;gap:10px}
+  .cta{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--brand);color:#fff;text-decoration:none;font-family:var(--body);font-weight:900;font-size:18px;padding:17px 20px;border-radius:14px;border:none;cursor:pointer}
+  .ghost{display:flex;align-items:center;justify-content:center;gap:8px;background:transparent;color:var(--ink);border:1.5px solid var(--line);border-radius:14px;font-family:var(--body);font-weight:700;font-size:16px;padding:15px 20px;cursor:pointer}
+  .phone{text-align:center;color:var(--muted);font-size:14px}
+  .phone b{color:var(--ink);font-size:17px;font-variant-numeric:tabular-nums;letter-spacing:.03em}
+  footer{text-align:center;color:var(--muted);font-size:13px}
+  footer strong{color:var(--ink);font-family:var(--display);font-weight:900}
+  @media(max-width:380px){.grid{grid-template-columns:repeat(21,1fr)}}
+  @media(prefers-reduced-motion:reduce){*,.grid span{transition:none!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="lbMark" viewBox="0 0 100 100">
+<path d="M41 13c-2 4-6 7-9 10-1 1 0 2 1 2h34c1 0 2-1 1-2-3-3-7-6-9-10-1-2-17-2-18 0Z" fill="currentColor"/>
+<path d="M33 27c-9 5-15 15-15 27 0 17 14 28 32 28s32-11 32-28c0-12-6-22-15-27H33Z" fill="currentColor"/>
+<circle cx="47" cy="56" r="20" fill="#fff" opacity=".92"/>
+<rect x="34" y="57" width="26" height="5" rx="2.5" fill="currentColor"/>
+<rect x="36" y="50" width="22" height="5" rx="2.5" fill="currentColor"/>
+<path d="M44 47h7l3-4h-7l-3 4Z" fill="currentColor"/>
+<path d="M70 41l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z" fill="#fff" opacity=".9"/>
+<rect x="60" y="70" width="22" height="13" rx="2" fill="currentColor"/>
+<path d="M82 74h6l6 6v3H82v-9Z" fill="currentColor"/>
+<circle cx="67" cy="85" r="4" fill="currentColor"/><circle cx="86" cy="85" r="4" fill="currentColor"/>
+<circle cx="67" cy="85" r="1.6" fill="#fff"/><circle cx="86" cy="85" r="1.6" fill="#fff"/>
+<rect x="44" y="72" width="14" height="3" rx="1.5" fill="currentColor"/>
+<rect x="48" y="78" width="10" height="3" rx="1.5" fill="currentColor"/>
+</symbol></svg>
+
+<div class="wrap">
+
+  <header>
+    <div class="brandline">
+      <span class="chip"><svg><use href="#lbMark"/></svg></span>
+      <div>
+        <div class="bName">Laundry <em>Bag</em></div>
+        <div class="bPlace">غسيل وكي — التجمع والرحاب ومدينتي</div>
+      </div>
+    </div>
+    <h1>الغسيل بياخد من عمرك قد إيه؟</h1>
+    <p class="lede">مش وقت الغسالة. الوقت اللي إنتي واقفة فيه: بتفرزي، بتنشري، بتلمّي، بتطوي، وبتكوي. جاوبي على ٣ أسئلة وشوفي الرقم بنفسك.</p>
+  </header>
+
+  <div class="card">
+    <div class="field">
+      <div class="q">البيت كام فرد؟</div>
+      <div class="seg" id="people">
+        <button type="button" data-loads="2" aria-pressed="false">١ – ٢</button>
+        <button type="button" data-loads="4" aria-pressed="true">٣ – ٤</button>
+        <button type="button" data-loads="6" aria-pressed="false">٥ – ٦</button>
+        <button type="button" data-loads="8" aria-pressed="false">٧ أو أكتر</button>
+      </div>
+    </div>
+    <div class="field">
+      <div class="q">كام غسلة في الأسبوع؟</div>
+      <div class="sliderRow">
+        <input type="range" id="loads" min="1" max="14" step="1" value="4" aria-label="عدد الغسلات في الأسبوع">
+        <span class="loadNum" id="loadsOut">٤</span>
+      </div>
+      <div class="hint">الغسلة = حمولة غسالة واحدة</div>
+    </div>
+    <button type="button" class="toggle" id="iron" aria-pressed="true">
+      <span>بتكوي الهدوم؟</span>
+      <span class="pipWrap"><span class="pip"></span></span>
+    </button>
+  </div>
+
+  <div class="panel" aria-live="polite">
+    <svg class="panelMark" aria-hidden="true"><use href="#lbMark"/></svg>
+    <div class="top">
+      <div class="rLabel">الوقت اللي بيروح من سنتك</div>
+      <div class="bigRow"><span class="big" id="hours">١٩٠</span><span class="unit">ساعة</span></div>
+      <div class="perWeek" id="perWeek">٣ ساعات و٤٠ دقيقة كل أسبوع</div>
+    </div>
+    <div class="yearBox">
+      <div class="yearHead">
+        <span class="yearTitle">سنتك ٣٦٥ يوم</span>
+        <span class="key"><span><i class="k1"></i>بيروح في الغسيل</span><span><i class="k2"></i>ليكي</span></span>
+      </div>
+      <div class="grid" id="grid" role="img" aria-label="شبكة أيام السنة"></div>
+      <div class="yearCap" id="yearCap">منهم <b>٨ يوم</b> بتقضيهم واقفة قدام الغسيل والمكواة</div>
+    </div>
+    <div class="equals">
+      <div class="eq"><div class="eqN" id="eqMovies">٩٥</div><div class="eqL">فيلم كامل</div></div>
+      <div class="eq"><div class="eqN" id="eqWork">٢٤</div><div class="eqL">يوم شغل</div></div>
+    </div>
+  </div>
+
+  <details>
+    <summary>الرقم جاي منين؟ (وتقدري تعدّليه)</summary>
+    <div class="rows">
+      <div class="row"><label for="t1">فرز وتحميل الغسالة</label><input type="number" id="t1" value="8" min="0" max="120" inputmode="numeric"></div>
+      <div class="row"><label for="t2">النشر</label><input type="number" id="t2" value="12" min="0" max="120" inputmode="numeric"></div>
+      <div class="row"><label for="t3">اللمّ والطي</label><input type="number" id="t3" value="15" min="0" max="120" inputmode="numeric"></div>
+      <div class="row"><label for="t4">الكي</label><input type="number" id="t4" value="20" min="0" max="120" inputmode="numeric"></div>
+      <div class="row total"><span>إجمالي الغسلة الواحدة</span><span id="perLoad">٥٥ دقيقة</span></div>
+    </div>
+    <p class="note">دقايق تقديرية — غيّريها لو بتاخد معاكي وقت أطول أو أقصر، والنتيجة هتتحدّث على طول.</p>
+  </details>
+
+  <div class="actions">
+    <a class="cta" id="wa" href="https://wa.me/201006646641" target="_blank" rel="noopener">عايزة الأيام دي ترجعلك؟ كلّمينا</a>
+    <button type="button" class="ghost" id="share">انسخي النتيجة وشيّريها</button>
+    <p class="phone">أو على الواتساب <b>01006646641</b></p>
+  </div>
+
+  <!-- the page is reached from the landing page, so it needs a way back -->
+  <footer><strong>Laundry Bag</strong> — نستلم من باب بيتك، نغسل ونكوي، ونرجّعهالك جاهزة للدولاب
+    <br><a href="index.html" style="color:var(--brand);font-weight:700;display:inline-block;margin-top:10px">الأسعار وتحميل التطبيق ←</a>
+  </footer>
+</div>
+
+<script>
+var AR=["٠","١","٢","٣","٤","٥","٦","٧","٨","٩"];
+function ar(n){return String(n).replace(/[0-9]/g,function(d){return AR[+d]})}
+var gridEl=document.getElementById("grid"),cells=[];
+for(var i=0;i<365;i++){var s=document.createElement("span");gridEl.appendChild(s);cells.push(s)}
+var el={people:document.getElementById("people"),loads:document.getElementById("loads"),loadsOut:document.getElementById("loadsOut"),
+iron:document.getElementById("iron"),hours:document.getElementById("hours"),perWeek:document.getElementById("perWeek"),
+perLoad:document.getElementById("perLoad"),yearCap:document.getElementById("yearCap"),eqMovies:document.getElementById("eqMovies"),
+eqWork:document.getElementById("eqWork"),wa:document.getElementById("wa"),share:document.getElementById("share"),
+t:[document.getElementById("t1"),document.getElementById("t2"),document.getElementById("t3"),document.getElementById("t4")]};
+var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches,shown=0,raf=null;
+function countTo(target){
+  if(reduce){el.hours.textContent=ar(target);shown=target;return}
+  if(raf)cancelAnimationFrame(raf);
+  var from=shown,t0=null,dur=520;
+  function step(ts){if(t0===null)t0=ts;var k=Math.min(1,(ts-t0)/dur),e=1-Math.pow(1-k,3);
+    shown=Math.round(from+(target-from)*e);el.hours.textContent=ar(shown);if(k<1)raf=requestAnimationFrame(step)}
+  raf=requestAnimationFrame(step)}
+function paintYear(days){var n=Math.max(0,Math.min(365,days));
+  for(var i=0;i<365;i++){var lost=i<n;if(cells[i].classList.contains("lost")!==lost)cells[i].classList.toggle("lost",lost)}}
+function num(input,fb){var v=parseInt(input.value,10);if(isNaN(v)||v<0)return fb;return Math.min(v,120)}
+function compute(){
+  var ironing=el.iron.getAttribute("aria-pressed")==="true";
+  var perLoad=num(el.t[0],8)+num(el.t[1],12)+num(el.t[2],15)+(ironing?num(el.t[3],20):0);
+  var loads=parseInt(el.loads.value,10),weekMin=perLoad*loads;
+  var yearHours=Math.round(weekMin*52/60),days=Math.round(yearHours/24);
+  var wh=Math.floor(weekMin/60),wm=weekMin%60;
+  el.loadsOut.textContent=ar(loads);
+  el.perLoad.textContent=ar(perLoad)+" دقيقة";
+  el.perWeek.textContent=ar(wh)+" ساعة"+(wm?" و"+ar(wm)+" دقيقة":"")+" كل أسبوع";
+  el.yearCap.innerHTML="منهم <b>"+ar(days)+" يوم</b> بتقضيهم واقفة قدام الغسيل والمكواة";
+  el.eqMovies.textContent=ar(Math.round(yearHours/2));
+  el.eqWork.textContent=ar(Math.round(yearHours/8));
+  countTo(yearHours);paintYear(days);
+  el.t[3].disabled=!ironing;el.t[3].style.opacity=ironing?"1":".4";
+  var msg="حسبتها على موقعكم: بضيّع "+yearHours+" ساعة في السنة على الغسيل. عايزة أعرف تفاصيل الخدمة.";
+  el.wa.href="https://wa.me/201006646641?text="+encodeURIComponent(msg);
+  el.share.dataset.text="اكتشفت إني بضيّع "+yearHours+" ساعة في السنة على الغسيل — يعني "+days+" يوم كامل من سنتي! احسبيها إنتي كمان مع Laundry Bag.";
+}
+el.people.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  Array.prototype.forEach.call(el.people.children,function(x){x.setAttribute("aria-pressed","false")});
+  b.setAttribute("aria-pressed","true");el.loads.value=b.dataset.loads;compute()});
+el.loads.addEventListener("input",compute);
+el.iron.addEventListener("click",function(){el.iron.setAttribute("aria-pressed",el.iron.getAttribute("aria-pressed")==="true"?"false":"true");compute()});
+el.t.forEach(function(i){i.addEventListener("input",compute)});
+function fallbackCopy(txt,done){var ta=document.createElement("textarea");ta.value=txt;ta.setAttribute("readonly","");
+  ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
+  try{document.execCommand("copy");done()}catch(err){}ta.remove()}
+el.share.addEventListener("click",function(){var txt=el.share.dataset.text||"";
+  var done=function(){var old=el.share.textContent;el.share.textContent="اتنسخت ✓";setTimeout(function(){el.share.textContent=old},1800)};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done).catch(function(){fallbackCopy(txt,done)})}
+  else{fallbackCopy(txt,done)}});
+compute();
+</script>
+</body>
+</html>
