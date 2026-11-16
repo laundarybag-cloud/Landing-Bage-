@@ -1,108 +1,439 @@
 {
   "ملابس عادية": {
-    "تيشيرت": { "iron": 17, "wash": 23, "wash_iron": 37, "dry_clean": 62 },
-    "تيشيرت طويل": { "iron": 18, "wash": 26, "wash_iron": 42 },
-    "قميص كاجوال": { "iron": 21, "wash": 25, "wash_iron": 38, "dry_clean": 75 },
-    "بلوزة": { "iron": 21, "wash": 25, "wash_iron": 38, "dry_clean": 75 },
-    "بنطلون": { "iron": 20, "wash": 28, "wash_iron": 43, "dry_clean": 66 },
-    "بنطلون جينز": { "iron": 20, "wash": 30, "wash_iron": 46, "dry_clean": 95 },
-    "شورت": { "iron": 13, "wash": 21, "wash_iron": 32, "dry_clean": 55 },
-    "تنورة": { "iron": 29, "wash": 30, "wash_iron": 45, "dry_clean": 87 },
-    "بيجامة": { "iron": 25, "wash": 30, "wash_iron": 45, "dry_clean": 80 },
-    "بلوفر صوف": { "iron": 24, "wash": 41, "wash_iron": 61, "dry_clean": 83 },
-    "سويتر": { "iron": 40, "wash": 42, "wash_iron": 63 },
-    "جاكيت": { "iron": 45, "wash": 69, "wash_iron": 104, "dry_clean": 124 },
-    "جاكيت دبل فيس": { "iron": 83, "wash": 106, "wash_iron": 159 },
-    "سالوبيت": { "iron": 53, "wash": 56, "wash_iron": 84 },
-    "ملابس داخلية": { "wash": 12, "wash_iron": 17 },
-    "جورب": { "wash": 5, "wash_iron": 8 }
+    "تيشيرت": {
+      "iron": 17,
+      "wash": 23,
+      "wash_iron": 37,
+      "dry_clean": 62
+    },
+    "تيشيرت طويل": {
+      "iron": 18,
+      "wash": 26,
+      "wash_iron": 42
+    },
+    "قميص كاجوال": {
+      "iron": 21,
+      "wash": 25,
+      "wash_iron": 38,
+      "dry_clean": 75
+    },
+    "بلوزة": {
+      "iron": 21,
+      "wash": 25,
+      "wash_iron": 38,
+      "dry_clean": 75
+    },
+    "بنطلون": {
+      "iron": 20,
+      "wash": 28,
+      "wash_iron": 43,
+      "dry_clean": 66
+    },
+    "بنطلون جينز": {
+      "iron": 20,
+      "wash": 30,
+      "wash_iron": 46,
+      "dry_clean": 95
+    },
+    "شورت": {
+      "iron": 13,
+      "wash": 21,
+      "wash_iron": 32,
+      "dry_clean": 55
+    },
+    "تنورة": {
+      "iron": 29,
+      "wash": 30,
+      "wash_iron": 45,
+      "dry_clean": 87
+    },
+    "بيجامة": {
+      "iron": 25,
+      "wash": 30,
+      "wash_iron": 45,
+      "dry_clean": 80
+    },
+    "بلوفر صوف": {
+      "iron": 24,
+      "wash": 41,
+      "wash_iron": 61,
+      "dry_clean": 83
+    },
+    "سويتر": {
+      "iron": 40,
+      "wash": 42,
+      "wash_iron": 63
+    },
+    "جاكيت": {
+      "iron": 45,
+      "wash": 69,
+      "wash_iron": 104,
+      "dry_clean": 124
+    },
+    "جاكيت دبل فيس": {
+      "iron": 83,
+      "wash": 106,
+      "wash_iron": 159
+    },
+    "سالوبيت": {
+      "iron": 53,
+      "wash": 56,
+      "wash_iron": 84
+    },
+    "ملابس داخلية": {
+      "wash": 12,
+      "wash_iron": 17
+    },
+    "جورب": {
+      "wash": 5,
+      "wash_iron": 8
+    }
   },
   "ملابس رسمية": {
-    "قميص": { "iron": 18, "wash": 24, "wash_iron": 37, "dry_clean": 75 },
-    "قميص طويل": { "iron": 20, "wash": 26, "wash_iron": 40 },
-    "قميص حرير": { "wash": 161 },
-    "بنطلون كلاسيك": { "iron": 29, "wash": 35, "wash_iron": 53, "dry_clean": 99 },
-    "جاكيت بدلة": { "iron": 38, "wash": 45, "wash_iron": 67, "dry_clean": 124 },
-    "بدلة": { "iron": 90, "wash": 113, "wash_iron": 165, "dry_clean": 167 },
-    "بدلة 3 قطع": { "iron": 100, "dry_clean": 217 },
-    "صديري": { "iron": 21, "wash": 25, "wash_iron": 38, "dry_clean": 83 },
-    "كرافتة": { "iron": 17, "wash": 19, "wash_iron": 28, "dry_clean": 49 },
-    "فستان": { "iron": 75, "wash": 91, "wash_iron": 137, "dry_clean": 251 },
-    "فستان سهرة": { "iron": 74, "wash": 87, "wash_iron": 131, "dry_clean": 186 },
-    "فستان خاص": { "iron": 100, "dry_clean": 620 },
-    "عباية": { "iron": 45, "wash": 53, "wash_iron": 79, "dry_clean": 148 },
-    "عباية صوف": { "iron": 60, "wash": 66, "wash_iron": 100 },
-    "جلابية": { "iron": 37, "wash": 39, "wash_iron": 58, "dry_clean": 104 },
-    "جلابية حريمي": { "iron": 32, "wash": 40, "wash_iron": 45 },
-    "بالطو": { "iron": 53, "wash": 68, "wash_iron": 103, "dry_clean": 190 },
-    "بالطو شمواه": { "dry_clean": 479 },
-    "جاكيت شمواه": { "dry_clean": 389 }
+    "قميص": {
+      "iron": 18,
+      "wash": 24,
+      "wash_iron": 37,
+      "dry_clean": 75
+    },
+    "قميص طويل": {
+      "iron": 20,
+      "wash": 26,
+      "wash_iron": 40
+    },
+    "قميص حرير": {
+      "wash": 161
+    },
+    "بنطلون كلاسيك": {
+      "iron": 29,
+      "wash": 35,
+      "wash_iron": 53,
+      "dry_clean": 99
+    },
+    "جاكيت بدلة": {
+      "iron": 38,
+      "wash": 45,
+      "wash_iron": 67,
+      "dry_clean": 124
+    },
+    "بدلة": {
+      "iron": 90,
+      "wash": 113,
+      "wash_iron": 165,
+      "dry_clean": 167
+    },
+    "بدلة 3 قطع": {
+      "iron": 100,
+      "dry_clean": 217
+    },
+    "صديري": {
+      "iron": 21,
+      "wash": 25,
+      "wash_iron": 38,
+      "dry_clean": 83
+    },
+    "كرافتة": {
+      "iron": 17,
+      "wash": 19,
+      "wash_iron": 28,
+      "dry_clean": 49
+    },
+    "فستان": {
+      "iron": 75,
+      "wash": 91,
+      "wash_iron": 137,
+      "dry_clean": 251
+    },
+    "فستان سهرة": {
+      "iron": 74,
+      "wash": 87,
+      "wash_iron": 131,
+      "dry_clean": 186
+    },
+    "فستان خاص": {
+      "iron": 100,
+      "dry_clean": 620
+    },
+    "عباية": {
+      "iron": 45,
+      "wash": 53,
+      "wash_iron": 79,
+      "dry_clean": 148
+    },
+    "عباية صوف": {
+      "iron": 60,
+      "wash": 66,
+      "wash_iron": 100
+    },
+    "جلابية": {
+      "iron": 37,
+      "wash": 39,
+      "wash_iron": 58,
+      "dry_clean": 104
+    },
+    "جلابية حريمي": {
+      "iron": 32,
+      "wash": 40,
+      "wash_iron": 45
+    },
+    "بالطو": {
+      "iron": 53,
+      "wash": 68,
+      "wash_iron": 103,
+      "dry_clean": 190
+    },
+    "بالطو شمواه": {
+      "dry_clean": 479
+    },
+    "جاكيت شمواه": {
+      "dry_clean": 389
+    }
   },
   "ملابس رياضية": {
-    "تيشيرت رياضي": { "iron": 17, "wash": 20, "wash_iron": 30, "dry_clean": 62 },
-    "شورت رياضي": { "iron": 17, "wash": 20, "wash_iron": 30, "dry_clean": 62 },
-    "بنطلون تراك": { "iron": 25, "wash": 33, "wash_iron": 49, "dry_clean": 87 },
-    "جاكيت تراك": { "iron": 32, "wash": 40, "wash_iron": 60, "dry_clean": 111 },
-    "هودي": { "iron": 32, "wash": 40, "wash_iron": 60, "dry_clean": 111 },
-    "سويت شيرت": { "iron": 28, "wash": 41, "wash_iron": 61, "dry_clean": 87 },
-    "ليجنز": { "iron": 17, "wash": 26, "wash_iron": 40, "dry_clean": 69 },
-    "جورب رياضي": { "wash": 9, "wash_iron": 14 },
-    "ملابس سباحة": { "wash": 24, "dry_clean": 62 },
-    "مايوه شرعي": { "wash": 45, "wash_iron": 67 }
+    "تيشيرت رياضي": {
+      "iron": 17,
+      "wash": 20,
+      "wash_iron": 30,
+      "dry_clean": 62
+    },
+    "شورت رياضي": {
+      "iron": 17,
+      "wash": 20,
+      "wash_iron": 30,
+      "dry_clean": 62
+    },
+    "بنطلون تراك": {
+      "iron": 25,
+      "wash": 33,
+      "wash_iron": 49,
+      "dry_clean": 87
+    },
+    "جاكيت تراك": {
+      "iron": 32,
+      "wash": 40,
+      "wash_iron": 60,
+      "dry_clean": 111
+    },
+    "هودي": {
+      "iron": 32,
+      "wash": 40,
+      "wash_iron": 60,
+      "dry_clean": 111
+    },
+    "سويت شيرت": {
+      "iron": 28,
+      "wash": 41,
+      "wash_iron": 61,
+      "dry_clean": 87
+    },
+    "ليجنز": {
+      "iron": 17,
+      "wash": 26,
+      "wash_iron": 40,
+      "dry_clean": 69
+    },
+    "جورب رياضي": {
+      "wash": 9,
+      "wash_iron": 14
+    },
+    "ملابس سباحة": {
+      "wash": 24,
+      "dry_clean": 62
+    },
+    "مايوه شرعي": {
+      "wash": 45,
+      "wash_iron": 67
+    },
+    "شنطة جيم": {
+      "wash": 61
+    }
   },
   "مفروشات": {
-    "ملاية سرير فردي": { "iron": 18, "wash": 37, "wash_iron": 43 },
-    "ملاية سرير كبيره": { "iron": 26, "wash_iron": 54 },
-    "ملاية سرير": { "dry_clean": 111 },
-    "كيس مخدة": { "iron": 13, "wash": 14, "wash_iron": 20, "dry_clean": 49 },
-    "مفرش سرير": { "iron": 41, "wash": 56, "wash_iron": 84, "dry_clean": 173 },
-    "غطاء لحاف": { "iron": 49, "wash": 56, "wash_iron": 84, "dry_clean": 173 },
-    "مفرش سفرة": { "iron": 40, "wash": 50, "wash_iron": 60, "dry_clean": 111 },
-    "منديل سفرة": { "iron": 16, "wash": 20, "wash_iron": 29 },
-    "غطاء كنبة": { "iron": 63, "wash": 81, "wash_iron": 122, "dry_clean": 223 },
-    "ستائر (سعر المتر)": { "iron": 15, "wash_iron": 17 },
-    "بشكير": { "iron": 17, "wash": 20, "wash_iron": 29 },
-    "فوطة صغيرة": { "iron": 13, "wash": 16, "wash_iron": 23 },
-    "روب حمام": { "wash": 30, "wash_iron": 45 }
+    "ملاية سرير فردي": {
+      "iron": 18,
+      "wash": 37,
+      "wash_iron": 43
+    },
+    "ملاية سرير كبيره": {
+      "iron": 26,
+      "wash_iron": 54
+    },
+    "ملاية سرير": {
+      "dry_clean": 111
+    },
+    "كيس مخدة": {
+      "iron": 13,
+      "wash": 14,
+      "wash_iron": 20,
+      "dry_clean": 49
+    },
+    "مفرش سرير": {
+      "iron": 41,
+      "wash": 56,
+      "wash_iron": 84,
+      "dry_clean": 173
+    },
+    "غطاء لحاف": {
+      "iron": 49,
+      "wash": 56,
+      "wash_iron": 84,
+      "dry_clean": 173
+    },
+    "مفرش سفرة": {
+      "iron": 40,
+      "wash": 50,
+      "wash_iron": 60,
+      "dry_clean": 111
+    },
+    "منديل سفرة": {
+      "iron": 16,
+      "wash": 20,
+      "wash_iron": 29
+    },
+    "غطاء كنبة": {
+      "iron": 63,
+      "wash": 81,
+      "wash_iron": 122,
+      "dry_clean": 223
+    },
+    "ستائر (سعر المتر)": {
+      "iron": 15,
+      "wash": 18,
+      "wash_iron": 27,
+      "dry_clean": 43
+    },
+    "بشكير": {
+      "iron": 17,
+      "wash": 20,
+      "wash_iron": 29
+    },
+    "فوطة صغيرة": {
+      "iron": 13,
+      "wash": 16,
+      "wash_iron": 23
+    },
+    "روب حمام": {
+      "wash": 30,
+      "wash_iron": 45
+    }
   },
   "سجاد وبطاطين": {
-    "سجاد عادي (سعر المتر المربع)": { "carpet": 45 },
-    "سجاد شعر (سعر المتر المربع)": { "carpet": 50 },
-    "سجاد صوف أو حرير أو يدوي (سعر المتر المربع)": { "carpet": 65 },
-    "سجادة صلاة": { "carpet": 30 },
-    "كوفرتة": { "carpet": 70 },
-    "بطانية صغيرة": { "carpet": 100 },
-    "بطانية كبيرة": { "carpet": 175 },
-    "بطانية أطفال": { "carpet": 50 },
-    "لحاف صغير": { "carpet": 100 },
-    "لحاف كبير": { "carpet": 175 },
-    "مخدة صغيرة": { "carpet": 50 },
-    "مخدة كبيرة": { "carpet": 75 },
-    "تنظيف مرتبة": { "carpet": 250 }
+    "سجاد عادي (سعر المتر المربع)": {
+      "carpet": 45
+    },
+    "سجاد شعر (سعر المتر المربع)": {
+      "carpet": 50
+    },
+    "سجاد صوف أو حرير أو يدوي (سعر المتر المربع)": {
+      "carpet": 65
+    },
+    "سجادة صلاة": {
+      "carpet": 30
+    },
+    "كوفرتة": {
+      "carpet": 70
+    },
+    "بطانية صغيرة": {
+      "carpet": 150
+    },
+    "بطانية كبيرة": {
+      "carpet": 175
+    },
+    "بطانية أطفال": {
+      "carpet": 50
+    },
+    "لحاف صغير": {
+      "carpet": 100
+    },
+    "لحاف كبير": {
+      "carpet": 175
+    },
+    "مخدة صغيرة": {
+      "carpet": 50
+    },
+    "مخدة كبيرة": {
+      "carpet": 75
+    },
+    "تنظيف مرتبة": {
+      "carpet": 250
+    },
+    "مشاية صغيرة": {
+      "carpet": 50
+    },
+    "مشاية كبيرة": {
+      "carpet": 75
+    }
   },
   "أخرى": {
-    "حذاء": { "wash": 150 },
-    "حذاء أطفال": { "wash": 85 },
-    "بوت": { "wash": 199 },
-    "شنطة مدرسية": { "wash": 100 },
-    "شنطة سفر صغيرة": { "wash": 150 },
-    "شنطة سفر كبيرة": { "wash": 225 },
-    "شنطة حريمي": { "wash": 120 },
-    "طرحة": { "iron": 21, "wash": 25, "wash_iron": 38, "dry_clean": 62 },
-    "ايشارب": { "dry_clean": 45 },
-    "كاب": { "dry_clean": 49 },
-    "غطاء سيارة": { "wash": 57, "wash_iron": 85, "dry_clean": 149 },
-    "دباديب أطفال": { "carpet": 50 },
-    "كرسي سيارة أطفال": { "carpet": 150 }
+    "حذاء": {
+      "wash": 150
+    },
+    "حذاء أطفال": {
+      "wash": 85
+    },
+    "بوت": {
+      "wash": 199
+    },
+    "شنطة مدرسية": {
+      "wash": 100
+    },
+    "شنطة سفر صغيرة": {
+      "wash": 150
+    },
+    "شنطة سفر كبيرة": {
+      "wash": 225
+    },
+    "شنطة حريمي": {
+      "wash": 120
+    },
+    "طرحة": {
+      "iron": 21,
+      "wash": 25,
+      "wash_iron": 38,
+      "dry_clean": 62
+    },
+    "ايشارب": {
+      "dry_clean": 45
+    },
+    "كاب": {
+      "dry_clean": 49
+    },
+    "غطاء سيارة": {
+      "wash": 57,
+      "wash_iron": 85,
+      "dry_clean": 149
+    },
+    "دباديب أطفال": {
+      "carpet": 50
+    },
+    "كرسي سيارة أطفال": {
+      "carpet": 150
+    }
   },
   "منتجات": {
-    "ديتول 500 مل": { "accessories": 40 },
-    "ديتول 1 لتر": { "accessories": 70 },
-    "هاند ووش 500 مل": { "accessories": 60 },
-    "هاند ووش 1 لتر": { "accessories": 110 },
-    "منظف أرضيات 500 مل": { "accessories": 45 },
-    "منظف أرضيات 1 لتر": { "accessories": 80 },
-    "صابون مواعين 500 مل": { "accessories": 39 },
-    "صابون مواعين 1 لتر": { "accessories": 70 }
+    "ديتول 500 مل": {
+      "accessories": 40
+    },
+    "ديتول 1 لتر": {
+      "accessories": 70
+    },
+    "هاند ووش 500 مل": {
+      "accessories": 60
+    },
+    "هاند ووش 1 لتر": {
+      "accessories": 110
+    },
+    "منظف أرضيات 500 مل": {
+      "accessories": 45
+    },
+    "منظف أرضيات 1 لتر": {
+      "accessories": 80
+    },
+    "صابون مواعين 500 مل": {
+      "accessories": 39
+    },
+    "صابون مواعين 1 لتر": {
+      "accessories": 70
+    }
   }
 }

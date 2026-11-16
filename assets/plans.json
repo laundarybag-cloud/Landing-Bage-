@@ -1,83 +1,82 @@
 [
- {
-  "name": "فردي",
-  "description": "باقة للأفراد - 20 قطعة شهرياً",
-  "items_per_month": 20,
-  "monthly_price": 200.0,
-  "quarterly_price": 540.0,
-  "annual_price": 1920.0,
-  "tier": "individual"
- },
- {
-  "name": "باقة السجاد والبطاطين",
-  "description": "غسيل سجاد وبطاطين ومفروشات",
-  "items_per_month": 10,
-  "monthly_price": 200.0,
-  "quarterly_price": null,
-  "annual_price": null,
-  "tier": "individual"
- },
- {
-  "name": "زوجي",
-  "description": "باقة للأزواج - 40 قطعة شهرياً",
-  "items_per_month": 40,
-  "monthly_price": 350.0,
-  "quarterly_price": 945.0,
-  "annual_price": 3360.0,
-  "tier": "couple"
- },
- {
-  "name": "الباقة الشاملة",
-  "description": "تشمل جميع الخدمات — ملابس وسجاد وتنظيف منازل",
-  "items_per_month": 30,
-  "monthly_price": 400.0,
-  "quarterly_price": null,
-  "annual_price": null,
-  "tier": "premium"
- },
- {
-  "name": "شنطة Laundry Bag",
-  "description": "املأ الشنطة غسيل ومكوي بحد أقصى 15 قطعة",
-  "items_per_month": 15,
-  "monthly_price": 500.0,
-  "quarterly_price": null,
-  "annual_price": null,
-  "tier": "individual"
- },
- {
-  "name": "عائلي",
-  "description": "باقة عائلية - 70 قطعة شهرياً",
-  "items_per_month": 70,
-  "monthly_price": 550.0,
-  "quarterly_price": 1485.0,
-  "annual_price": 5280.0,
-  "tier": "family"
- },
- {
-  "name": "بريميوم",
-  "description": "باقة مميزة - 120 قطعة شهرياً + أولوية",
-  "items_per_month": 120,
-  "monthly_price": 900.0,
-  "quarterly_price": 2430.0,
-  "annual_price": 8640.0,
-  "tier": "premium"
- },
- {
-  "name": "شنطة 100 قطعة",
-  "description": "اغسل و اكوي 100 قطعة ب نص ثنهم",
-  "items_per_month": 20,
-  "monthly_price": 1000.0,
-  "quarterly_price": 1500.0,
-  "annual_price": 5000.0,
-  "tier": "individual"
- },
- {
-  "name": "باقة تنظيف المنازل",
-  "description": "خدمات تنظيف المنازل والشقق",
-  "items_per_month": 15,
-  "monthly_price": 1500.0,
-  "quarterly_price": null,
-  "annual_price": null,
-  "tier": "individual"
- }
+  {
+    "name": "شنطة Laundry Bag",
+    "description": "املأ الشنطة غسيل ومكوي بحد أقصى 15 قطعة",
+    "items_per_month": 15,
+    "monthly_price": 500,
+    "quarterly_price": null,
+    "annual_price": null,
+    "tier": "individual",
+    "covered_services": ["wash", "iron", "wash_iron"]
+  },
+  {
+    "name": "فردي",
+    "description": "باقة للأفراد - 20 قطعة شهرياً",
+    "items_per_month": 20,
+    "monthly_price": 690,
+    "quarterly_price": 1860,
+    "annual_price": 6620,
+    "tier": "individual",
+    "covered_services": ["wash", "iron", "wash_iron"]
+  },
+  {
+    "name": "شنطة 100 قطعة",
+    "description": "اغسل واكوي 100 قطعة بنص التمن",
+    "items_per_month": 20,
+    "monthly_price": 1000,
+    "quarterly_price": 1500,
+    "annual_price": 5000,
+    "tier": "individual",
+    "covered_services": ["wash", "iron", "wash_iron"]
+  },
+  {
+    "name": "زوجي",
+    "description": "باقة للأزواج - 40 قطعة شهرياً",
+    "items_per_month": 40,
+    "monthly_price": 1310,
+    "quarterly_price": 3540,
+    "annual_price": 12580,
+    "tier": "couple",
+    "covered_services": ["wash", "iron", "wash_iron"]
+  },
+  {
+    "name": "الباقة الشاملة",
+    "description": "تشمل الملابس بكل خدماتها مع تنظيف المنازل",
+    "items_per_month": 30,
+    "monthly_price": 1410,
+    "quarterly_price": 3810,
+    "annual_price": 13540,
+    "tier": "premium",
+    "covered_services": ["wash", "iron", "wash_iron", "dry_clean", "housekeeping"]
+  },
+  {
+    "name": "باقة تنظيف المنازل",
+    "description": "خدمات تنظيف المنازل والشقق",
+    "items_per_month": 15,
+    "monthly_price": 1500,
+    "quarterly_price": null,
+    "annual_price": null,
+    "tier": "individual",
+    "covered_services": ["housekeeping"]
+  },
+  {
+    "name": "عائلي",
+    "description": "باقة عائلية - 70 قطعة شهرياً",
+    "items_per_month": 70,
+    "monthly_price": 2140,
+    "quarterly_price": 5780,
+    "annual_price": 20540,
+    "tier": "family",
+    "covered_services": ["wash", "iron", "wash_iron"]
+  },
+  {
+    "name": "بريميوم",
+    "description": "باقة مميزة - 120 قطعة شهرياً + أولوية",
+    "items_per_month": 120,
+    "monthly_price": 3430,
+    "quarterly_price": 9260,
+    "annual_price": 32930,
+    "tier": "premium",
+    "covered_services": ["wash", "iron", "wash_iron"]
+  }
 ]
